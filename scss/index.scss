@@ -1,0 +1,202 @@
+@font-face {
+      font-family: akira;
+      src: url('../fonts/Akira\ Expanded\ Demo.otf');
+}
+
+@font-face {
+      font-family: caviarDreams;
+      src: url('../fonts/CaviarDreams.ttf');
+}
+@font-face {
+      font-family: caviarDreamsBold;
+      src: url('../fonts/CaviarDreams_Bold.ttf');
+}
+@font-face {
+      font-family: caviarDreamsBoldItalic;
+      src: url('../fonts/CaviarDreams_BoldItalic.ttf');
+}
+// colors
+$maincolor: #171717;
+
+
+
+*{ 
+      margin: 0;
+      padding: 0;
+}
+
+
+.important { 
+      color: blue;
+}
+body { 
+
+}
+
+.videoBackground { 
+      video{ 
+            position: fixed;
+            object-fit: cover;
+            height: 100vh;
+            width: 100vw;
+      }
+}
+.city { 
+      color: blue;
+}
+
+
+.container { 
+      position: relative;
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 { 
+            color: white;
+            font-family: akira;
+            text-shadow: 1px 1px 1px black;
+            font-size: 5rem;
+      }
+}
+
+
+ @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+.tracking-in-expand {
+	animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.main {
+      height: 100vh;
+      background: $maincolor;
+      position: relative;
+      h1 { 
+            color: white;
+            font-family: caviarDreamsBold;
+            text-shadow: 1px 1px 1px black;
+            font-size: 7rem;
+            margin-left: 10vw;
+            padding-top: 10vh;
+      }
+      p{ 
+            color: white;
+            font-size: 2em;
+            font-family: caviarDreams;
+            float: right;
+            max-width: 50vw;
+            padding-right: 5vw;
+            padding-top: 10vh;
+      }
+}
+
+.main-image { 
+      
+      margin-left: 5vw;
+      
+}
+
+
+ @keyframes shadow-pop-tl {
+      0% {
+        box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff, 0 0 #ffffff;
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        box-shadow: -1px -1px #ffffff, -2px -2px #ffffff, -3px -3px #ffffff, -4px -4px #ffffff, -5px -5px #ffffff, -6px -6px #ffffff, -7px -7px #ffffff, -8px -8px #ffffff;
+        transform: translateX(8px) translateY(8px);
+      }
+    }
+
+    
+.shadow-pop-tl {
+	animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+
+.main2 {
+      margin-top: -5vh;
+      height: 100vh;
+      background: $maincolor;
+      position: relative;
+      h1 { 
+            color: white;
+            font-family: caviarDreamsBold;
+            text-shadow: 1px 1px 1px black;
+            font-size: 7rem;
+            padding-top: 10vh;
+            text-align: center;
+      }
+      p{ 
+            color: white;
+            font-size: 2em;
+            font-family: caviarDreams;
+            max-width: 50vw;
+            padding-right: 5vw;
+            padding-top: 10vh;
+      }
+      .grid{ 
+            position: relative;
+            top: 35vh;
+            left: 19vw;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5vw;
+      }
+      .box{ 
+            height: 20rem;
+            width: 20rem;
+            background-color: white ;
+      }
+      .carousel-wrapper { 
+            overflow: hidden;
+            width: 90%;
+            box-sizing: border-box;
+            .carrousel{ 
+                  transform-style: preserve-3d;
+            }
+      }
+}
+
+
+
+
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+      scrollbar-width: auto;
+      scrollbar-color: #ffffff #212121;
+    }
+  
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 16px;
+    }
+  
+    *::-webkit-scrollbar-track {
+      background: #212121;
+    }
+  
+    *::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 3px none #ffffff;
+    }
+
+
+    
